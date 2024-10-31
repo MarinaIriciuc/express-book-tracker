@@ -25,14 +25,17 @@ export default function Menu() {
         <div className="flex items-center gap-2 cursor-pointer">
           {(activeItem === "home" || pathname === '/') ? <IoHome className="text-xl text-blue-400"/> :
             <IoHomeOutline className=" text-xl"/>}
-          <p className={`text-xs md:block hidden ${(activeItem === "home" || pathname === '/') ? 'text-blue-400' : ''}`}>To Read</p>
+          <p
+            className={`text-xs md:block hidden ${(activeItem === "home" || pathname === '/') ? 'text-blue-400' : ''}`}>To
+            Read</p>
         </div>
       </Link>
       <Link to="/books">
         <div onClick={() => setActiveItem("books")} className="flex items-center gap-2 cursor-pointer">
           {(activeItem === "books" || pathname === "/books") ? <PiBooksBold className="text-2xl text-blue-400"/> :
             <PiBooks className="text-2xl"/>}
-          <p className={`text-xs md:block hidden ${(activeItem === "books" || pathname === "/books") ? 'text-blue-400' : ''}`}>My
+          <p
+            className={`text-xs md:block hidden ${(activeItem === "books" || pathname === "/books") ? 'text-blue-400' : ''}`}>My
             books</p>
         </div>
       </Link>
@@ -57,7 +60,8 @@ export default function Menu() {
         <div className="flex items-center gap-2 cursor-pointer">
           {(activeItem === "settings" || pathname === '/settings') ? <IoSettings className="text-xl text-blue-400"/> :
             <IoSettingsOutline className=" text-xl"/>}
-          <p className={`text-xs md:block hidden ${(activeItem === "settings" || pathname === '/settings')? 'text-blue-400' : ''}`}>Settings</p>
+          <p
+            className={`text-xs md:block hidden ${(activeItem === "settings" || pathname === '/settings') ? 'text-blue-400' : ''}`}>Settings</p>
         </div>
       </Link>
     </div>

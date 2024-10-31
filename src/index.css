@@ -68,7 +68,7 @@
   }
 
   .navbar {
-    @apply flex items-center justify-end border-b border-gray-200 py-3 pe-20
+    @apply flex items-center justify-end border-b border-gray-200 py-3 md:px-20 px-10
   }
 
   .sidebar {
@@ -76,7 +76,7 @@
   }
 
   .menu {
-    @apply absolute w-full flex justify-between items-center h-14 bottom-0 bg-blue-50 shadow-md px-20 border-t
+    @apply absolute w-full flex justify-between items-center h-14 bottom-0  shadow-md md:px-20 px-10 border-t
   }
 
 
