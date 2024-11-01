@@ -76,7 +76,7 @@
   }
 
   .menu {
-    @apply absolute w-full flex justify-between items-center h-14 bottom-0  shadow-md md:px-20 px-10 border-t
+    @apply fixed w-full flex justify-between items-center h-14 bottom-0 shadow-md md:px-20 px-10 border-t bg-white z-50;
   }
 
 

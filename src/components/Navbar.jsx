@@ -10,6 +10,8 @@ import {
 import {FaRegUser} from "@react-icons/all-files/fa/FaRegUser.js";
 import {LuLogOut} from "react-icons/lu";
 import {CiMoneyCheck1} from "react-icons/ci";
+import {IoSunnyOutline} from "@react-icons/all-files/io5/IoSunnyOutline.js";
+import {IoMoonOutline} from "@react-icons/all-files/io5/IoMoonOutline.js";
 
 export default function Navbar() {
   return (
@@ -33,9 +35,14 @@ export default function Navbar() {
             <DropdownMenuItem>
               <CiMoneyCheck1/>
               Billing</DropdownMenuItem>
+
             <DropdownMenuItem>
               <LuLogOut/>
               Logout</DropdownMenuItem>
+            <DropdownMenuItem>
+              <IoSunnyOutline className="text-lg"/>
+              <IoMoonOutline/>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

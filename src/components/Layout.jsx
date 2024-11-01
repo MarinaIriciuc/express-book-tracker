@@ -14,7 +14,7 @@ export default function Layout({children}) {
         {pathname === '/books' && <Sidebar/>}
         <div className="flex flex-col w-full">
           <Navbar/>
-          <main className="p-3">{children}</main>
+          <main className="py-8 px-20">{children}</main>
         </div>
       </div>
       <Menu/>
